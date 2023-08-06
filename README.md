@@ -7,15 +7,7 @@
 ```c
 #include <LiquidCrystal.h>
 
-int counterInt = 0;
-int prestate =0;
-
-int currentState;
-int lastState = LOW;
-int buttonState;
-
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
-
 
 void setup() {
   lcd.begin(16, 2);
@@ -28,5 +20,4 @@ void loop() {
   lcd.setCursor(0, 1);
   lcd.print(millis() / 1000);
 }
-
 ```
